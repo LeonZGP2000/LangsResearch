@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/43141401/visual-studio-error-d8016-zi-and-gy-command-line-options-are-incompatible
