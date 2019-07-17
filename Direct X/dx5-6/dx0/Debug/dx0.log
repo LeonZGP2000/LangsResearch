@@ -1,0 +1,14 @@
+﻿  main.cpp
+e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\customvertex.h(9): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\d3global.h(9): note: see declaration of 'g_pd3dDevice'
+e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\customvertex.h(10): warning C4459: declaration of 'ptr_g_pMesh' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\mesh.h(5): note: see declaration of 'ptr_g_pMesh'
+e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\customvertex.h(11): warning C4459: declaration of 'g_dwNumMaterials' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\mesh.h(10): note: see declaration of 'g_dwNumMaterials'
+e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\matrix.h(10): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\d3global.h(9): note: see declaration of 'g_pd3dDevice'
+e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\light.h(9): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\d3global.h(9): note: see declaration of 'g_pd3dDevice'
+e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\texture.h(7): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx5-6\dx0\d3global.h(9): note: see declaration of 'g_pd3dDevice'
+  dx0.vcxproj -> E:\3_GIT\LangsProject\LangsResearch\Direct X\dx5-6\Debug\dxSamples.exe

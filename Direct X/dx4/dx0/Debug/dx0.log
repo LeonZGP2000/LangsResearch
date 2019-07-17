@@ -1,0 +1,11 @@
+﻿  main.cpp
+e:\3_git\langsproject\langsresearch\direct x\dx4\dx0\customvertex.h(16): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx4\dx0\d3global.h(8): note: see declaration of 'g_pd3dDevice'
+e:\3_git\langsproject\langsresearch\direct x\dx4\dx0\customvertex.h(17): warning C4459: declaration of 'g_pVB' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx4\dx0\customvertex.h(12): note: see declaration of 'g_pVB'
+e:\3_git\langsproject\langsresearch\direct x\dx4\dx0\customvertex.h(18): warning C4100: 'pointsCpount': unreferenced formal parameter
+e:\3_git\langsproject\langsresearch\direct x\dx4\dx0\matrix.h(10): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx4\dx0\d3global.h(8): note: see declaration of 'g_pd3dDevice'
+e:\3_git\langsproject\langsresearch\direct x\dx4\dx0\light.h(6): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  e:\3_git\langsproject\langsresearch\direct x\dx4\dx0\d3global.h(8): note: see declaration of 'g_pd3dDevice'
+  dx0.vcxproj -> E:\3_GIT\LangsProject\LangsResearch\Direct X\dx4\Debug\dxSamples.exe

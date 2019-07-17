@@ -1,0 +1,21 @@
+﻿  main.cpp
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\customvertex.h(36): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  c:\users\leonid\source\repos\dx_sample0\dx4\dx0\d3global.h(8): note: see declaration of 'g_pd3dDevice'
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\customvertex.h(37): warning C4459: declaration of 'g_pVB' hides global declaration
+  c:\users\leonid\source\repos\dx_sample0\dx4\dx0\customvertex.h(29): note: see declaration of 'g_pVB'
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\customvertex.h(38): warning C4459: declaration of 'ptr_g_pTexture' hides global declaration
+  c:\users\leonid\source\repos\dx_sample0\dx4\dx0\d3global.h(12): note: see declaration of 'ptr_g_pTexture'
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\customvertex.h(93): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  c:\users\leonid\source\repos\dx_sample0\dx4\dx0\d3global.h(8): note: see declaration of 'g_pd3dDevice'
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\customvertex.h(94): warning C4459: declaration of 'g_pVB' hides global declaration
+  c:\users\leonid\source\repos\dx_sample0\dx4\dx0\customvertex.h(29): note: see declaration of 'g_pVB'
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\customvertex.h(95): warning C4100: 'pointsCpount': unreferenced formal parameter
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\matrix.h(10): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  c:\users\leonid\source\repos\dx_sample0\dx4\dx0\d3global.h(8): note: see declaration of 'g_pd3dDevice'
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\light.h(6): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  c:\users\leonid\source\repos\dx_sample0\dx4\dx0\d3global.h(8): note: see declaration of 'g_pd3dDevice'
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\texture.h(4): warning C4459: declaration of 'g_pd3dDevice' hides global declaration
+  c:\users\leonid\source\repos\dx_sample0\dx4\dx0\d3global.h(8): note: see declaration of 'g_pd3dDevice'
+c:\users\leonid\source\repos\dx_sample0\dx4\dx0\texture.h(4): warning C4459: declaration of 'ptr_g_pTexture' hides global declaration
+  c:\users\leonid\source\repos\dx_sample0\dx4\dx0\d3global.h(12): note: see declaration of 'ptr_g_pTexture'
+  dx0.vcxproj -> C:\Users\Leonid\source\repos\DX_sample0\dx4\Debug\dxSamples.exe
