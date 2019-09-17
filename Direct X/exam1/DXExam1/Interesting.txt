@@ -1,0 +1,4 @@
+
+1. D3DRS_CULLMODE
+Culling (отбраковка, отбрасывани) - дял увеличения производительности отбрасываются, те поверхности (faces),  на котоыре не смотрит камера
+//Try set cull mode to D3DCULL_NONE, this option make sure all triangles will be rendered.
