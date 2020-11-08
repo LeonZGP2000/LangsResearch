@@ -1,0 +1,175 @@
+﻿@Model SDating.Models.SessionResult
+
+@{
+    ViewData["Title"] = "Results";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Результат обработки совпадений</h1>
+
+<table class="blueTable_width_50">
+    <tr>
+        <td align="center">
+            <a href="@Url.Action("Send", "Dating")">
+                Отправить результаты почтой
+                <img src="~/img/m/send.png" alt="Отправка результатов" />
+            </a>
+        </td>
+    </tr>
+</table>
+
+<table class="blueTable_width_50">
+    <tr>
+        <th colspan="2" align="center">
+            <b>Сессия БС № @Model.ID (@Model.DT)</b>
+        </th>
+    </tr>
+    <tr>
+        <th colspan="2" align="center">
+            <b>Статистика</b>
+        </th>
+    </tr>
+    <tr>
+        <td align="center">
+            <img src="~/img/m/boy.png" /> М : @Model.Statisticks.participantsBoys
+        </td>
+        <td align="center">
+            <img src="~/img/m/girl.png" />  Ж : @Model.Statisticks.participantsGirls
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="~/img/m/chanpion.png" width="16" />
+            Самый популярный парень: @Model.Statisticks.mostPopularBoy
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="~/img/m/chanpion.png" width="16" />
+            Самая популярная девушка: @Model.Statisticks.mostPopularGirl
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="~/img/m/ghost.png" width="16" />
+            Самый невезучий парень: @Model.Statisticks.mostDontLuckBoy
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="~/img/m/ghost.png" width="16" />
+            Самая невезучая девочка: @Model.Statisticks.mostDontLuckyGirl
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">Всего совпадений: @Model.Statisticks.matchingFound</td>
+    </tr>
+</table>
+
+<br />
+<!--Результаты совпадений-->
+
+<!-- BOYS-->
+<table class="blueTable_width_50">
+    <tr>
+        <th colspan="2" align="center">
+            <img src="~/img/m/boy.png" />
+            <b> BOYS BOYS BOYS</b>
+            <img src="~/img/m/boy.png" />
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+
+            <table class="blueTable_width_50">
+                @foreach (PersonalResult boy in @Model.Boys)
+                {
+                <tr>
+                    <th colspan="3" align="center">
+                        @boy.Name, @boy.Age
+                    </th>
+                </tr>
+                <tr>                    
+                    <td>
+                        <!-- ячейка для фото-->
+                        <img src="@boy.Picture" width="350" alt="@boy.Name" />
+                    </td>
+                    <td>
+                        <!-- ячейка для совпадений-->
+                        <table class="blueTable_width_50">
+                            @foreach (PersonalResult matching in @boy.Matching)
+                            {
+                                <tr>
+                                    <th align="center">
+                                        <b>@matching.Name, @matching.Age [@matching.Phone]</b>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="@matching.Picture" width="350" alt="@matching.Name" />
+                                    </td>
+                                </tr>
+                            }
+                        </table>
+                    </td>
+                </tr>
+                        }                    
+                </table>
+        </td>
+    </tr>
+</table>
+
+<br />
+<!-- GIRLS-->
+
+<table class="blueTable_width_50">
+    <tr>
+        <th colspan="2" align="center">
+            <img src="~/img/m/girl.png" />
+            <b>GIRLS GIRLS GIRLS</b>
+            <img src="~/img/m/girl.png" />
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+
+            <table class="blueTable_width_50">
+                @foreach (PersonalResult girl in @Model.Girls)
+                {
+                    <tr>
+                        <th colspan="2" align="center">
+                            @girl.Name, @girl.Age
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- ячейка для фото-->
+                            <img src="@girl.Picture" width="350" alt="@girl.Name" />
+                        </td>
+                        <td>
+                            <!-- ячейка для совпадений-->
+                            <table class="blueTable_width_50">
+                                @foreach (PersonalResult matching in @girl.Matching)
+                                {
+                                    <tr>
+                                        <th align="center">
+                                            <b>@matching.Name, @matching.Age [@matching.Phone]</b>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="@matching.Picture" width="350" alt="@matching.Name" />
+                                        </td>
+                                    </tr>
+                                }
+                            </table>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </td>
+    </tr>
+
+</table>

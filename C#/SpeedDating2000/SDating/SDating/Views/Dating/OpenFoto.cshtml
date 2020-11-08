@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Фото";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Фото участника</h1>
+<p>URL: @ViewBag.url</p>
+
+@using (Html.BeginForm("OpenFoto", "Dating"))
+{
+<input type="submit" value="Вернуться к списку участников" />
+}
+
+<table class="blueTable">
+    <tr>
+        <th><img src="@ViewBag.url" alt="foto" /></th>
+    </tr>
+</table>

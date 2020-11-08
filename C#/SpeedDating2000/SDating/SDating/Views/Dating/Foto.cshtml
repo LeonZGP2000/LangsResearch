@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Foto";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Uploading foto</h1>
+
+@using (Html.BeginForm("Foto", "Dating", FormMethod.Post, htmlAttributes:
+new { enctype = "multipart/form-data", name = @ViewBag.name, tableId = @ViewBag.TableId }))
+{
+    <table class="blueTable_width_50">
+        <tr>
+            <th colspan="2"> Фото участника </th>
+        </tr>
+        <tr>
+            <td>Имя</td>
+            <td>@ViewBag.name (table @ViewBag.TableId)</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="file" name="uploadedFile" accept="image/*" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit"  value="Загрузить"/>
+            </td>
+        </tr>
+    </table>
+    <p>@Html.Hidden("name")</p>
+    <p>@Html.Hidden("tableId")</p>
+    <p>@Html.Hidden("sessionId")</p>
+    <input id="Hidden1" type="hidden" />
+}

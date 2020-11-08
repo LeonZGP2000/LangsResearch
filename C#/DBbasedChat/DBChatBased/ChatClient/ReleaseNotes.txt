@@ -1,0 +1,15 @@
+﻿
+DB-Based Chat client version 1.0.0.1:
+===========================================
+===========================================
+
+++ Done:
+===========================================
+1. Chat dialog with user, found by 'Find' click
+2. Save chat to file
+3. Load chat history manually from interface
+4. Free registration/login with Login/Password
+
+++ Bugs:
+===========================================
+- User blocking

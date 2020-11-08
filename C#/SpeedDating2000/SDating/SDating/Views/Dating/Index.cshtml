@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewData["Title"] = "Быстрые свидания";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+
+<table class="blueTable_width_70">
+    <tr>
+        <th>
+            Привет, <b>@Context.User.Identity.Name</b>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <table width="50%" align="center">
+                <tr>
+                    <th colspan="2">
+                        <b> Действия: </b>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td align="center"><img src="~/img/m/new.png"> </td>
+                    <td>Начать @Html.ActionLink("новую", "new") сессию.</td>
+                </tr>
+
+                <tr>
+                    <td align="center"><img src="~/img/m/load.png" /></td>
+                    <td>@Html.ActionLink("Загрузить", "load") сессию.</td>
+                </tr>
+
+                <tr>
+                    <td align="center"><img src="~/img/m/settings.png" /></td>
+                    <td>@Html.ActionLink("Настройки", "init", "settings") программы.</td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <img src="~/img/m/logout.png" />
+                    </td>
+                    <td>@Html.ActionLink("Выйти", "logout", "auth")</td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <table width="50%" align="center">
+                <tr>
+                    <td>
+                        <img src="~/img/lvs.jpg" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+
+<!--<h2>
+    <p>
+        <b>
+            >> Привет, @Context.User.Identity.Name
+        </b>
+    </p>
+</h2>
+
+<br />
+
+<h3>-->
+    <!-- "new" changed to "session" -->
+    <!--Чтобы начать новую сессию, нажмите @Html.ActionLink("session", "New"), или @Html.ActionLink("сюда", "load"), чтобы просмотреть результаты.
+    <p>
+        <b>
+            >>@Html.ActionLink("Выйти", "logout", "auth")
+        </b>
+    </p>
+</h3>
+
+<table width="100%" align="center">
+    <tr>
+        <td>
+            <img src="~/img/lvs.jpg" />
+        </td>
+    </tr>
+</table>-->
+

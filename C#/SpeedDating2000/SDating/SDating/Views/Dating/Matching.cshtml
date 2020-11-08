@@ -1,0 +1,38 @@
+﻿@model List<SDating.Models.PersonalBlanc>
+
+@{
+    ViewData["Title"] = "Matching";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Введите совпадения для @ViewData["UserHost"]</h1>
+
+@using (Html.BeginForm("SaveMatching", "dating"))
+{
+    <table class="blueTable">
+        <tr>
+            <th colspan="2">Введите совпадения (поставьте галочки)</th>
+        </tr>
+
+        @foreach (PersonalBlanc blank in Model)
+        {
+            <tr>
+                <td>
+                    @blank.Name (Стол № @blank.TableId)
+                </td>
+                <td>
+                    <input type="checkbox" name="tags" id="categorieOne" value="@blank.TableId" />
+                </td>
+            </tr>
+        }
+        <tr>
+            <td colspan="2" align="center" class="tfoot">
+                <input name="submit" type="submit" value="Закончить ввод" />
+            </td>
+        </tr>
+    </table>
+
+    <p>@Html.Hidden("Name", @ViewData["name"])</p>
+    <p>@Html.Hidden("TableId", @ViewData["tableId"])</p>
+    <p>@Html.Hidden("isMale", @ViewData["isMale"])</p>
+}

@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Halt! Zeigen Sie Ihren Papieren!</h1>
+
+@using (Html.BeginForm("login", "auth"))
+{
+    <table align="center">
+        <tr>
+            <th>
+                <img src="~/img/stop-1.png" />
+            </th>
+            <th>
+
+                <table class="blueTable">
+                    <tr>
+                        <th colspan="2">Авторизация</th>
+                    </tr>
+                    <tr>
+                        <td>Login</td>
+                        <td>@Html.TextBox("login")</td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>@Html.Password("password")</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center" class="tfoot">
+                            <input name="submit" type="submit" value="Вход" />
+                        </td>
+                    </tr>
+
+                    @if (ViewData["AuthError"] != null)
+                    {
+                        <tr>
+                            <td colspan="2" align="center">
+                                <p class="error">
+                                    @ViewData["AuthError"]
+                                </p>
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+
+            </th>
+        </tr>
+    </table>
+}

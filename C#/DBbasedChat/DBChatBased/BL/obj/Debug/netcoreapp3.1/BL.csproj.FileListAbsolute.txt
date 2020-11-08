@@ -1,0 +1,9 @@
+C:\__DBbasedChat\DBChatBased\BL\bin\Debug\netcoreapp3.1\BL.dll.config
+C:\__DBbasedChat\DBChatBased\BL\bin\Debug\netcoreapp3.1\BL.deps.json
+C:\__DBbasedChat\DBChatBased\BL\bin\Debug\netcoreapp3.1\BL.dll
+C:\__DBbasedChat\DBChatBased\BL\bin\Debug\netcoreapp3.1\BL.pdb
+C:\__DBbasedChat\DBChatBased\BL\obj\Debug\netcoreapp3.1\BL.AssemblyInfoInputs.cache
+C:\__DBbasedChat\DBChatBased\BL\obj\Debug\netcoreapp3.1\BL.AssemblyInfo.cs
+C:\__DBbasedChat\DBChatBased\BL\obj\Debug\netcoreapp3.1\BL.csproj.CoreCompileInputs.cache
+C:\__DBbasedChat\DBChatBased\BL\obj\Debug\netcoreapp3.1\BL.dll
+C:\__DBbasedChat\DBChatBased\BL\obj\Debug\netcoreapp3.1\BL.pdb
