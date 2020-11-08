@@ -1,0 +1,9 @@
+C:\__DBbasedChat\DBChatBased\Database\bin\Debug\Database.dacpac
+C:\__DBbasedChat\DBChatBased\Database\bin\Debug\Database.dll
+C:\__DBbasedChat\DBChatBased\Database\bin\Debug\Database.pdb
+C:\__DBbasedChat\DBChatBased\Database\obj\Debug\Database.dll
+C:\__DBbasedChat\DBChatBased\Database\obj\Debug\Database.pdb
+C:\__DBbasedChat\DBChatBased\Database\obj\Debug\Model.xml
+C:\__DBbasedChat\DBChatBased\Database\obj\Debug\refactor.xml
+C:\__DBbasedChat\DBChatBased\Database\obj\Debug\postdeploy.sql
+C:\__DBbasedChat\DBChatBased\Database\obj\Debug\predeploy.sql

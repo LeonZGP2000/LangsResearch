@@ -1,0 +1,88 @@
+﻿@model SDating.Models.DatingSession
+
+@{
+    ViewData["Title"] = "Ввод результатов совпадений";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Ввод данных сессии</h1>
+
+<table class="blueTable_width_70">
+    <tr>
+        <th>№</th>
+        <th>Имя</th>
+        <th>М/F</th>
+        <th><b>Фото</b></th>
+        <th><b>Cовпадения</b></th>
+        <th width="22"></th>
+    </tr>
+
+    @foreach (PersonalBlanc blank in Model.PersonalBlancs)
+    {
+        <tr>
+            <td valign="middle" align="center">@blank.TableId</td>
+            <td valign="middle">@blank.Name</td>
+            <td valign="middle" align="center">
+                @if (@blank.isMan)
+                {
+                    <img src="~/img/m/boy.png" />
+                }
+                else
+                {
+                    <img src="~/img/m/girl.png" />
+                }
+            </td>
+            @if (String.IsNullOrEmpty(blank.Picture))
+            {
+                <td align="center">
+                    <a href="@Url.Action("Foto", "Dating", new { name = @blank.Name, tableId = @blank.TableId, sessionId = @Model.SessionID })">
+                        <img src="~/img/m/upload.png" alt="Загрузить фото" />
+                    </a>
+                </td>
+
+            }
+            else
+            {
+                <td>@Html.ActionLink("<<Открыть фото>>", "OpenFoto", new { url = @blank.Picture })</td>
+            }
+            <td>
+                <b>
+                    @Html.ActionLink("<<Добавить совпадение>>", "Matching", new { user = @blank.Name, tableId = @blank.TableId, isMale = @blank.isMan })
+                </b>
+            </td>
+            <td align="center">
+                <a href="@Url.Action("Remove", "Dating", new { name = @blank.Name, tableId = @blank.TableId, sessionId = @Model.SessionID })">
+                    <img src="~/img/m/delete.png" alt="Удалит участника" />
+                </a>
+            </td>
+        </tr>
+    }
+
+    <tr>
+        <td colspan="5">
+            <b>@Html.ActionLink("Добавить участника", "Add")</b>
+        </td>
+    </tr>
+
+    <p>@ViewBag.SaveMessage</p>    
+
+</table>
+
+<table align="center" border="1">
+    <tr>
+        <td valign="middle">
+            <a href="@Url.Action("Save", "Dating")">
+                <img src="~/img/m/save.png" width="16" alt="Загрузить фото" />
+                @Html.ActionLink("Сохранить сессию", "Save")
+            </a>
+        </td>
+        <td valign="middle">
+            <a href="@Url.Action("Results", "Dating")">
+                <img src="~/img/m/stat.png" width="16" alt="Загрузить фото" />
+                @Html.ActionLink("Сформировать результаты", "Results")
+            </a>
+        </td>
+    </tr>
+</table>
+
+

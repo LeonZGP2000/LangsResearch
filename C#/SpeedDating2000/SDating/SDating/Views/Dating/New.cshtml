@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "New Session";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Новая сессия</h1>
+
+
+@using (Html.BeginForm("new", "dating"))
+{
+    <table class="blueTable">
+        <tr class="thead">
+            <th colspan="2" align="center"><b>Колличество</b></th>
+        </tr>
+        <tr>
+            <td class="blueTable_td_center">Парней:</td>
+            <td>@Html.TextBox("MansCount")</td>
+        </tr>
+        <tr>
+            <td class="blueTable_td_center">Девушек: </td>
+            <td>@Html.TextBox("GirlsCount")</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center" class="tfoot">
+                <input name="submit" type="submit" value="Начать" />
+            </td>
+        </tr>
+    </table>
+}
+
+

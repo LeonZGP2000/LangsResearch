@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Speed Dating</title>
+</head>
+<body>
+    <div>
+
+        <br />
+
+        <table class="layot_table">
+            <tr>
+                <td>
+                    <img class="layout_logo" />
+                </td>
+            </tr>
+        </table>
+
+        <br />
+
+
+        <table class="table_common_header">
+            <tr class="tr_common">
+                <td class="td_common">
+                    <b>@Html.ActionLink("~ Новая сессия БС ~", "New", "dating")</b>
+                </td>
+                <td class="td_common">
+                    <b>@Html.ActionLink("~ Загрузка / Результаты ~", "Load", "dating")</b>
+                </td>
+                @if (@User.Identity.IsAuthenticated)
+                {
+                    <td width="15px">
+                        <a href="@Url.Action("init","settings")">
+                            <img src="~/img/m/settings.png" alt="Настройки" />
+                        </a>
+                    </td>
+                      
+                    <td width="15px">
+                        <a href="@Url.Action("logout","auth")">
+                            <img src="~/img/m/logout.png" alt="Выйти" />
+                        </a>
+                    </td>
+                }
+            </tr>
+        </table>
+
+        <br />
+
+        
+        <table class="render_body_table">
+            <tr>
+                <td class="td_common_ao">
+                    <div class="render_body_container">
+                        <br />
+                        @RenderBody()
+                        <br />
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+</body>
+</html>

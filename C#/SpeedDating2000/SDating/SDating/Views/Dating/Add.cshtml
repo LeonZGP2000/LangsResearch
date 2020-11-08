@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "Add Person";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Добавление участника</h1>
+
+@using (Html.BeginForm("add", "dating"))
+{
+
+    <br />
+    <br />
+
+    <table class="blueTable">
+        <tr class="thead">
+            <th>Table #</th>
+            <th>@Html.TextBox("tableId")</th>
+        </tr>
+        <tr>
+            <td сlass="blueTable_td_center">Имя</td>
+            <td>@Html.TextBox("name")</td>
+        </tr>
+        <tr>
+            <td сlass="blueTable_td_center">Возраст</td>
+            <td>@Html.TextBox("age")</td>
+        </tr>
+        <tr>
+            <td сlass="blueTable_td_center">Телефон</td>
+            <td>@Html.TextBox("phone")</td>
+        </tr>
+        <tr>
+            <td сlass="blueTable_td_center">E-mail</td>
+            <td>@Html.TextBox("email")</td>
+        </tr>
+        <tr>
+            <td сlass="blueTable_td_center">M/F</td>
+            <td>
+                @Html.DropDownList("Sex", new List<SelectListItem> {
+           new SelectListItem { Text = "Boy", Value = "Boy", Selected = true },
+           new SelectListItem { Text = "Girl", Value = "Girl" } })
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">
+                <input name="submit" type="submit" value="Добавить" />
+            </td>
+        </tr>
+    </table>
+ }
+

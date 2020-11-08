@@ -1,0 +1,104 @@
+﻿@model SDating.SmtpSetting
+@{
+    ViewData["Title"] = "Настройки";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Настройки</h1>
+
+<p>
+    <img src="~/img/m/settings.png" />
+    Настройка отправки почты (SMTP)
+    <img src="~/img/m/settings.png" />
+</p>
+
+@using (Html.BeginForm("save", "settings"))
+{
+    <table class="blueTable_width_50">
+        <tr>
+            <th colspan="2">SMTP настройка</th>
+        </tr>
+        <tr>
+            <td>Host-name</td>
+            <td>@Html.TextBoxFor(m => m.host)</td>
+        </tr>
+        <tr>
+            <td>Port</td>
+            <td>@Html.TextBoxFor(m => m.Port)</td>
+        </tr>
+        <tr>
+            <td>Логин (от почты)</td>
+            <td>@Html.TextBoxFor(m => m.MailBoxLogin)</td>
+        </tr>
+        <tr>
+            <td>Пароль (от почты)</td>
+            <td>@Html.TextBoxFor(m => m.MailBoxPassword)</td>
+        </tr>
+        <tr>
+            <td>Тема письма (парни)</td>
+            <td>@Html.TextBoxFor(m => m.EmailSubjectpatterntBoys)</td>
+        </tr>
+        <tr>
+            <td>Тема письма (девушки)</td>
+            <td>@Html.TextBoxFor(m => m.EmailSubjectpatterntGirls)</td>
+        </tr>
+        <tr>
+            <td>Ваш email</td>
+            <td>@Html.TextBoxFor(m => m.From)</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input name="submit" type="submit" value="Сохранить" />
+            </td>
+        </tr>
+    </table>
+}
+
+<p>
+    <img src="~/img/m/send.png" />
+    Отправить тестовой письмо
+    <img src="~/img/m/send.png" />
+</p>
+
+@if (@ViewData["tmg"] != null)
+{
+    <p>@ViewData["tmg"]</p>
+}
+
+@using (Html.BeginForm("test", "settings"))
+{
+    <table class="blueTable_width_50">
+        <tr>
+            <td colspan="2">Получатель: @Html.ValueFor(m => m.From)</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input name="submit" type="submit" value="Отправить" />
+            </td>
+        </tr>
+    </table>
+}
+
+<table border="0" align="center">
+    <tr>
+        <td valign="middle" align="center">
+            <img src="~/img/m/stat.png" />
+            Сформировать отчет по использованиию памяти на носителе
+            <img src="~/img/m/stat.png" />
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <b>
+                @Html.ActionLink("Сформировать отчет", "stat", "settings")
+            </b>
+        </td>
+    </tr>
+</table>
+
+<div class="stat">
+    @if (@ViewData["statmsg"] != null)
+    {
+        await Html.RenderPartialAsync("StatPartial");
+    }
+</div>

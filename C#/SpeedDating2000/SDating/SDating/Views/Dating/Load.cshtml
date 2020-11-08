@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Load Session";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<h1>Загрузка сессии/Просмотр результатов</h1>
+
+@using (Html.BeginForm("load", "dating"))
+{
+    <table class="blueTable">
+        <tr class="thead">
+            <td colspan="2" align="center"><b>Ввод ID сессии</b></td>
+        </tr>
+
+        <tr>
+            <td class="blueTable_td_center">ID сессии: </td>
+            <td>@Html.TextBox("id")</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input name="submit" type="submit" value="Загрузить" />
+            </td>
+        </tr>
+    </table>
+}
