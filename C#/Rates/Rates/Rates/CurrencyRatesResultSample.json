@@ -1,0 +1,18 @@
+[
+  {
+    "DT": "2021-06-24T00:00:00+03:00",
+    "BankName": "Pravex",
+    "sell_USD": 27.5900,
+    "sell_EURO": 32.9000,
+    "buy_USD": 27.2500,
+    "buy_EURO": 32.3500
+  },
+  {
+    "DT": "2021-06-24T00:00:00+03:00",
+    "BankName": "PrivatBank",
+    "sell_USD": 27.65000,
+    "sell_EURO": 33.01000,
+    "buy_USD": 27.25000,
+    "buy_EURO": 32.40000
+  }
+]
