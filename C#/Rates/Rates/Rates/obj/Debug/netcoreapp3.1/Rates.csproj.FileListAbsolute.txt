@@ -1,0 +1,15 @@
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\bin\Debug\netcoreapp3.1\Rates.exe
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\bin\Debug\netcoreapp3.1\Rates.deps.json
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\bin\Debug\netcoreapp3.1\Rates.runtimeconfig.json
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\bin\Debug\netcoreapp3.1\Rates.runtimeconfig.dev.json
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\bin\Debug\netcoreapp3.1\Rates.dll
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\bin\Debug\netcoreapp3.1\Rates.pdb
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\obj\Debug\netcoreapp3.1\Rates.AssemblyInfoInputs.cache
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\obj\Debug\netcoreapp3.1\Rates.AssemblyInfo.cs
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\obj\Debug\netcoreapp3.1\Rates.csproj.CoreCompileInputs.cache
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\obj\Debug\netcoreapp3.1\Rates.dll
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\obj\Debug\netcoreapp3.1\Rates.pdb
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\obj\Debug\netcoreapp3.1\Rates.genruntimeconfig.cache
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\obj\Debug\netcoreapp3.1\Rates.csproj.CopyComplete
+G:\__GIT\LangsResearch\C#\Rates\Rates\Rates\obj\Debug\netcoreapp3.1\Rates.csprojAssemblyReference.cache
